@@ -1,0 +1,656 @@
+PYTHON COMPLETE GUIDE
+
+1. INTRODUCTION TO PYTHON
+
+Python is a high-level, interpreted, general-purpose programming language created by Guido van Rossum and released in 1991.
+
+Features:
+- Easy to learn and read
+- Interpreted language
+- Open source
+- Cross-platform
+- Extensive standard library
+- Supports object-oriented programming
+- Supports functional programming
+- Supports procedural programming
+
+Applications:
+- Web Development
+- Data Science
+- Machine Learning
+- Artificial Intelligence
+- Automation
+- Scripting
+- Game Development
+- Cybersecurity
+- Cloud Computing
+
+--------------------------------------------------
+
+2. VARIABLES AND DATA TYPES
+
+Variables are used to store data.
+
+Example:
+
+name = "John"
+age = 25
+
+Common Data Types:
+
+Integer (int)
+x = 10
+
+Float (float)
+pi = 3.14
+
+String (str)
+language = "Python"
+
+Boolean (bool)
+is_active = True
+
+NoneType
+value = None
+
+Type Checking:
+
+type(x)
+
+Type Conversion:
+
+int("10")
+float("10.5")
+str(100)
+
+--------------------------------------------------
+
+3. INPUT AND OUTPUT
+
+Taking Input:
+
+name = input("Enter your name: ")
+
+Displaying Output:
+
+print("Hello", name)
+
+Formatted Strings:
+
+name = "John"
+age = 25
+
+print(f"My name is {name} and I am {age} years old.")
+
+--------------------------------------------------
+
+4. OPERATORS
+
+Arithmetic Operators
+
++
+-
+*
+/
+/
+//
+%
+**
+
+Example:
+
+a = 10
+b = 3
+
+a + b
+a - b
+a * b
+a / b
+a // b
+a % b
+a ** b
+
+Comparison Operators
+
+==
+!=
+>
+<
+>=
+<=
+
+Logical Operators
+
+and
+or
+not
+
+Assignment Operators
+
+=
++=
+-=
+*=
+/=
+
+Membership Operators
+
+in
+not in
+
+Identity Operators
+
+is
+is not
+
+--------------------------------------------------
+
+5. CONDITIONAL STATEMENTS
+
+if Statement
+
+age = 18
+
+if age >= 18:
+    print("Adult")
+
+if-else
+
+if age >= 18:
+    print("Adult")
+else:
+    print("Minor")
+
+if-elif-else
+
+marks = 85
+
+if marks >= 90:
+    print("Grade A")
+elif marks >= 70:
+    print("Grade B")
+else:
+    print("Grade C")
+
+Nested If
+
+if age > 18:
+    if age < 60:
+        print("Working Age")
+
+--------------------------------------------------
+
+6. LOOPS
+
+For Loop
+
+for i in range(5):
+    print(i)
+
+While Loop
+
+count = 0
+
+while count < 5:
+    print(count)
+    count += 1
+
+Loop Control Statements
+
+break
+continue
+pass
+
+--------------------------------------------------
+
+7. FUNCTIONS
+
+Functions are reusable blocks of code.
+
+Creating a Function
+
+def greet(name):
+    return f"Hello {name}"
+
+Calling a Function
+
+message = greet("John")
+
+Arguments
+
+Positional Arguments
+
+Keyword Arguments
+
+Default Arguments
+
+def greet(name="Guest"):
+    print(name)
+
+Variable Length Arguments
+
+*args
+
+**kwargs
+
+Lambda Functions
+
+square = lambda x: x * x
+
+--------------------------------------------------
+
+8. STRINGS
+
+Creating Strings
+
+name = "Python"
+
+Operations
+
+len(name)
+
+name.upper()
+name.lower()
+
+name.replace("P", "J")
+
+name.split()
+
+String Slicing
+
+text = "Python"
+
+text[0]
+text[-1]
+text[0:3]
+
+--------------------------------------------------
+
+9. LISTS
+
+Lists are ordered and mutable.
+
+numbers = [1, 2, 3]
+
+Methods
+
+append()
+insert()
+remove()
+pop()
+sort()
+reverse()
+
+List Slicing
+
+numbers[0:2]
+
+List Comprehension
+
+squares = [x*x for x in range(5)]
+
+--------------------------------------------------
+
+10. TUPLES
+
+Tuples are ordered and immutable.
+
+point = (10, 20)
+
+Access Elements
+
+point[0]
+
+--------------------------------------------------
+
+11. SETS
+
+Sets store unique values.
+
+colors = {"red", "blue"}
+
+Methods
+
+add()
+remove()
+union()
+intersection()
+
+--------------------------------------------------
+
+12. DICTIONARIES
+
+Store key-value pairs.
+
+student = {
+    "name": "John",
+    "age": 20
+}
+
+Access Values
+
+student["name"]
+
+Methods
+
+keys()
+values()
+items()
+get()
+
+--------------------------------------------------
+
+13. FILE HANDLING
+
+Read File
+
+with open("file.txt", "r") as file:
+    content = file.read()
+
+Write File
+
+with open("file.txt", "w") as file:
+    file.write("Hello")
+
+Append File
+
+with open("file.txt", "a") as file:
+    file.write("New Text")
+
+--------------------------------------------------
+
+14. EXCEPTION HANDLING
+
+try:
+    x = 10 / 0
+except ZeroDivisionError:
+    print("Cannot divide by zero")
+
+finally:
+    print("Finished")
+
+Custom Exception
+
+raise ValueError("Invalid value")
+
+--------------------------------------------------
+
+15. MODULES
+
+Importing Modules
+
+import math
+
+math.sqrt(25)
+
+Import Specific Function
+
+from math import sqrt
+
+sqrt(25)
+
+--------------------------------------------------
+
+16. OBJECT ORIENTED PROGRAMMING
+
+Class
+
+class Car:
+    pass
+
+Object
+
+car = Car()
+
+Constructor
+
+class Car:
+
+    def __init__(self, brand):
+        self.brand = brand
+
+Methods
+
+class Car:
+
+    def drive(self):
+        print("Driving")
+
+--------------------------------------------------
+
+17. INHERITANCE
+
+class Animal:
+
+    def speak(self):
+        print("Animal Sound")
+
+class Dog(Animal):
+
+    def bark(self):
+        print("Woof")
+
+dog = Dog()
+
+--------------------------------------------------
+
+18. POLYMORPHISM
+
+class Dog:
+    def speak(self):
+        return "Woof"
+
+class Cat:
+    def speak(self):
+        return "Meow"
+
+--------------------------------------------------
+
+19. ENCAPSULATION
+
+class BankAccount:
+
+    def __init__(self):
+        self.__balance = 0
+
+Private members use double underscore.
+
+--------------------------------------------------
+
+20. ABSTRACTION
+
+Abstraction hides implementation details.
+
+Implemented using abstract classes.
+
+from abc import ABC, abstractmethod
+
+--------------------------------------------------
+
+21. ITERATORS
+
+nums = iter([1,2,3])
+
+next(nums)
+
+--------------------------------------------------
+
+22. GENERATORS
+
+def count():
+
+    yield 1
+    yield 2
+    yield 3
+
+Generators produce values lazily.
+
+--------------------------------------------------
+
+23. DECORATORS
+
+def decorator(func):
+
+    def wrapper():
+        print("Before")
+        func()
+        print("After")
+
+    return wrapper
+
+--------------------------------------------------
+
+24. REGULAR EXPRESSIONS
+
+import re
+
+pattern = r"\d+"
+
+re.findall(pattern, "Age 25")
+
+Common Patterns:
+
+\d digits
+\w words
+\s whitespace
+
+--------------------------------------------------
+
+25. DATETIME
+
+from datetime import datetime
+
+now = datetime.now()
+
+--------------------------------------------------
+
+26. MULTITHREADING
+
+import threading
+
+Used for concurrent execution of tasks.
+
+--------------------------------------------------
+
+27. MULTIPROCESSING
+
+import multiprocessing
+
+Useful for CPU intensive tasks.
+
+--------------------------------------------------
+
+28. ASYNCIO
+
+import asyncio
+
+Used for asynchronous programming.
+
+async def main():
+    pass
+
+--------------------------------------------------
+
+29. TYPE HINTS
+
+def add(a: int, b: int) -> int:
+    return a + b
+
+--------------------------------------------------
+
+30. DATACLASSES
+
+from dataclasses import dataclass
+
+@dataclass
+class User:
+    name: str
+    age: int
+
+--------------------------------------------------
+
+31. TESTING
+
+import unittest
+
+Unit testing helps verify code correctness.
+
+--------------------------------------------------
+
+32. LOGGING
+
+import logging
+
+logging.info("Application Started")
+
+Logging levels:
+
+DEBUG
+INFO
+WARNING
+ERROR
+CRITICAL
+
+--------------------------------------------------
+
+33. PIP
+
+Install Package
+
+pip install package_name
+
+Upgrade Package
+
+pip install --upgrade package_name
+
+List Packages
+
+pip list
+
+--------------------------------------------------
+
+34. VIRTUAL ENVIRONMENTS
+
+Create
+
+python -m venv venv
+
+Activate (Windows)
+
+venv\Scripts\activate
+
+Deactivate
+
+deactivate
+
+--------------------------------------------------
+
+35. PYTHON BEST PRACTICES
+
+- Follow PEP 8 style guide
+- Use meaningful variable names
+- Keep functions small
+- Write comments when necessary
+- Handle exceptions properly
+- Use virtual environments
+- Write unit tests
+- Avoid code duplication
+- Use type hints for larger projects
+- Organize code into modules
+
+--------------------------------------------------
+
+36. COMMON PYTHON INTERVIEW QUESTIONS
+
+What is Python?
+What are lists and tuples?
+What is the difference between a list and a set?
+What is inheritance?
+What is polymorphism?
+What are decorators?
+What are generators?
+What is a lambda function?
+What is exception handling?
+What is the Global Interpreter Lock (GIL)?
+
+END OF PYTHON GUIDE
