@@ -19,13 +19,13 @@ class AgentState(TypedDict):
 
 
 llm = ChatGroq(
-    model="llama-3.1-8b-instant",
+    model="openai/gpt-oss-20b",
     temperature=0,
     api_key=os.environ.get("API_KEY")
 )
 
 generation_llm = ChatGroq(
-    model="qwen/qwen3-32b",
+    model="openai/gpt-oss-120b",
     temperature=0,
     api_key=os.environ.get("API_KEY")
 )
